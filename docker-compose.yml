@@ -1,0 +1,7 @@
+services:
+  app:
+    image: vue-practice-activity-app
+    build: .
+    ports:
+    # port gauche pour le navigateur:port droit pour l'interne et doit etre pareil que cel qui existe dans dockerfile
+      - "8086:80"
